@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Profile with Navbar</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">DUCKY</div>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#links">Links</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <div class="card" id="profile">
+      <h1>Welcome to my profile</h1>
+      <img src="img/Profile.jpg" width="150" height="150" alt="Profile Picture">
+      <p>My name is Hatorki Wary, I am an engineering student and I love to travel. Learning web dev...</p>
+    </div>
+
+    <div class="card" id="hobbies">
+      <h2>My Hobbies</h2>
+      <ul>
+        <li>Traveling</li>
+        <li>Photography</li>
+        <li>Playing Games</li>
+      </ul>
+    </div>
+
+    <div class="card" id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>1-10 From Mainao Swrang Foraisali</li>
+        <li>11 & 12 from UN Academy</li>
+        <li>B.Tech: CIT</li>
+      </ul>
+    </div>
+
+    <div class="card" id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Coding Languages like C++, C, Java</li>
+        <li>Editor</li>
+      </ul>
+    </div>
+
+    <div class="card" id="links">
+      <h2>My Links</h2>
+      <div class="social-links">
+        <a href="https://discord.com/users/1145669499878637600" target="_blank" class="discord" title="Discord">
+          <i class="fa-brands fa-discord"></i>
+        </a>
+        <a href="https://github.com/hatorkiwry" target="_blank" class="github" title="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="mailto:u23cse1015@cit.ac.in" target="_blank" class="email" title="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>
